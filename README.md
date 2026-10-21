@@ -4,7 +4,7 @@ This project was completed as part of [freeCodeCamp's Relational Databases curri
 using PostgreSQL, GitHub Codespaces, and CodeRoad.
 
 ## Credits & Attribution
-Original curriculum created by [freeCodeCamp](https://github.com/freeCodeCamp/rdb-alpha).  
+Original curriculum created by freeCodeCamp:https://github.com/freeCodeCamp/rdb-alpha.  
 This repository contains my personal implementation as part of my learning journey.
 
 
