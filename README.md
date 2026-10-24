@@ -1,12 +1,12 @@
-# Build a Database of Video Game Characters
+ Build a Database of Video Game Characters
 
-This project was completed as part of [freeCodeCamp's Relational Databases curriculum](https://www.freecodecamp.org/) 
-using PostgreSQL, GitHub Codespaces, and CodeRoad.
+This project was completed as part of [freeCodeCamp's Relational Databases curriculum](https://www.freecodecamp.org/) using PostgreSQL, GitHub Codespaces, and CodeRoad.
 
 ## Credits & Attribution
-Original curriculum created by freeCodeCamp:https://github.com/freeCodeCamp/rdb-alpha.  
+Original curriculum created by [freeCodeCamp](https://github.com/freeCodeCamp/rdb-alpha).  
 This repository contains my personal implementation as part of my learning journey.
 
+---
 
 ## Technologies
 - PostgreSQL
@@ -21,10 +21,21 @@ This repository contains my personal implementation as part of my learning journ
 - Relationships between tables
 - Data manipulation and management
 
-## Development Environment
-The project was completed using GitHub Codespaces and the CodeRoad interactive learning platform. 
-The completed work was exported to a forked repository to preserve the project and its progress.
+## Project Files
+- `mario_database.sql` — Contains all PostgreSQL commands used to build the database, including table creation, data insertion, updates, and JOIN queries.
 
+## Database Structure
+The database includes the following tables:
+- **characters** — Main table with character info (name, homeland, favorite color)
+- **more_info** — Additional character details (birthday, height, weight)
+- **sounds** — Sound files associated with each character
+- **actions** — Available actions (run, jump, duck)
+- **character_actions** — Junction table linking characters to their actions
+
+## Development Environment
+The project was completed using GitHub Codespaces and the CodeRoad interactive learning platform. The completed work was exported to a forked repository to preserve the project and its progress.
+
+---
 
 ## Prerequisites
 1. [Docker Engine](https://docs.docker.com/engine/)
@@ -43,8 +54,15 @@ https://raw.githubusercontent.com/freeCodeCamp/learn-relational-databases-by-bui
 
 8. Click the "Start" button
 
+## How to Run the SQL File
+To recreate the database manually using the SQL file:
+```bash
+psql --username=freecodecamp --dbname=postgres < mario_database.sql
+```
 ## How to Restart or Switch Projects
 > ⚠️ Note: If you restart or switch projects you will lose your progress, along with any files or directories you created.
+
 1. Press Ctrl / Cmd + Shift + P and enter `Dev Containers: Rebuild Container`
 2. Wait for VS Code to reopen and reload the Docker container
 3. Open CodeRoad, enter the URL to a `tutorial.json` file, and start the project as described above
+   
